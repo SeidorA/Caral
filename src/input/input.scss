@@ -1,0 +1,181 @@
+@use "../sass/abstract/abstract" as caral;
+@use "sass:map";
+
+
+.input_caral{
+    display: flex;
+    flex-direction: column;
+    gap: caral.$padding-y-xs;
+    position: relative;
+    overflow: hidden;
+    padding: 1.5px;
+    &:hover, &:active, &:focus-visible, &:target {
+        .contextualion {
+           transform: translateX(-150%);
+           transition: ease all 0.5s;           
+        }
+        .contextualintut{
+            padding-left: caral.$padding-y-s;
+            transition: ease all 1s;
+        }
+        
+            
+            
+    }
+    input, textarea{
+        @include caral.colorvalue("ligth", "light", "background");
+
+        border: solid 1px caral.$hard-ligth;
+        padding: caral.$padding-y-s caral.$padding-x-s;
+        border-radius: caral.$border-radius;
+        transition: 1s ease all;      
+
+        &:hover, &:active, &:focus-visible, &:target{
+            border-color:caral.$hard-ligth;
+            box-shadow: 0 0 15px 0 rgba($color: caral.$hard-ligth, $alpha: 0.3);
+            
+        }
+    }
+    label{
+       @include caral.colorvalue("ligth", "carbon", "color");
+
+    }
+    .Required{
+        @include caral.colorvalue("ligth", "danger", "color");
+        margin-left: caral.$padding-y-xs;
+    }
+    .Optional{
+        @include caral.colorvalue("ligth", "hard", "color");
+        margin-left: caral.$padding-y-xs;
+    }
+    .inputpassword{
+        display: flex;
+        border-radius: caral.$border-radius;
+        overflow: hidden;
+        border: solid 1px caral.$hard-ligth;
+        @include caral.colorvalue("ligth", "light", "background");
+        &:hover, &:active, &:focus-visible, &:target, &:focus, &:focus-within{
+            box-shadow: 0 0 15px 0 rgba($color: caral.$hard-ligth, $alpha: 0.3);
+        }
+    }
+    .input_password{
+        all: unset;
+        width: 100%;
+        padding: caral.$padding-y-s caral.$padding-x-s;
+        transition: 1s ease all;
+        border-radius: caral.$border-radius 0 0 caral.$border-radius;
+    }
+    .btn-see{
+        height: 100%;
+        
+        padding: caral.$padding-y-s caral.$padding-x-s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: solid 1px caral.$hard-ligth;        
+    }
+
+    .helper{
+        @include caral.colorvalue("ligth", "hard", "color");
+        @include caral.font("small");
+    }
+
+    /* Hide the default eye icon from Tailwind */
+    input[type="password"]::-ms-reveal,
+    input[type="password"]::-ms-clear {
+        display: none;
+    }
+
+    input[type="password"]::-webkit-input-placeholder {
+        display: none;
+    }
+
+    input[type="password"]::-moz-placeholder {
+        display: none;
+    }
+
+    input[type="password"]:-ms-input-placeholder {
+        display: none;
+    }
+
+    input[type="password"]::-webkit-input-placeholder {
+        display: none;
+    }
+
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .contextualion{
+        position: absolute;
+        left: 10px;
+        path{
+            @include caral.colorvalue("ligth", "hard", "fill");
+        }
+    }
+    .contextualintut{
+        padding-left: 40px
+    }   
+}
+
+.t-50{
+    top: 50%;
+    &.b-50{
+        transform: translateY(-50%);
+    }
+}
+.m-50{
+    top: 50%;
+    transform: translateY(-50%);
+    &.b-50{
+        transform: translateY(-100%);
+    }
+}
+
+
+.dark{
+    label{
+        @include caral.colorvalue("dark", "carbon", "color");
+    }
+    input, input[type="date"] {
+        @include caral.colorvalue("dark", "light", "background");
+        border: solid 1px caral.$hard-dark;
+        @include caral.colorvalue("dark", "carbon", "color");
+
+        &:hover, &:active, &:focus-visible, &:target{
+            border-color:caral.$hard-dark;
+            box-shadow: 0 0 15px 0 rgba($color: caral.$hard-dark, $alpha: 0.3);
+        }
+    }
+
+    .inputpassword{
+        @include caral.colorvalue("dark", "light", "background");
+        @include caral.colorvalue("dark", "carbon", "color");
+        path{
+            @include caral.colorvalue("dark", "carbon", "fill");
+        }
+    }
+
+    input[type="date"] {
+        
+        &::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+
+          
+        
+    }
+
+    
+    
+    
+}
+
+  

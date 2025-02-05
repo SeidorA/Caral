@@ -1,0 +1,70 @@
+export const Info: Story = {
+  args: {
+    children: "Button Caral",
+    color: "info"
+  },
+};
+
+export const Aprove: Story = {
+  args: {
+    children: "Button Caral",
+    color: "approve",
+    large: false,
+    disabled: false,
+  }
+};
+
+
+export const Warning: Story = {
+    args: {
+        children: "Button Caral",
+        color: "warning",
+        large: false,
+        disabled: false,
+    }
+};
+
+export const Danger: Story = {
+    args: {
+        children: "Button Caral",
+        color: "danger",
+        large: false,
+        disabled: false,
+    }
+};
+
+export const Indigo: Story ={
+    args: {
+        children: "Button Caral",
+        color: "indigo",
+        large: false,
+        disabled: false,
+    }
+};
+
+export const sakura: Story ={
+    args: {
+        children: "Button Caral",
+        color: "sakura",
+        large: false,
+        disabled: false,
+    }
+};
+
+export const ligth: Story ={
+    args: {
+        children: "Button Caral",
+        color: "ligth",
+        large: false,
+        disabled: false,
+    }
+};
+
+export const outline: Story= {
+    args: {
+        children: "Button Caral",
+        color: "outline",
+        large: false,
+        disabled: false,
+    }
+};

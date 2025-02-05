@@ -1,0 +1,183 @@
+@use "../sass/abstract/abstract" as caral;
+@use "sass:map";
+
+@mixin box($color){
+  box-shadow: 0px 0px 10px 0px rgba( $color, 0.5);
+  color: $color;
+}
+@mixin disabled(){
+  background-color: caral.$hard-ligth;
+  color: caral.$light-ligth;
+  cursor: not-allowed;
+  path {
+    fill: caral.$light-ligth;
+  }
+}
+@each $color-name, $color-value in caral.$base {
+  .btn-#{$color-name} {
+    background-color: $color-value;
+    @include caral.light("ligth");
+    path {
+      fill: caral.$flat-white-ligth;
+    }
+    &:hover {
+      background-color: map.get(caral.$base_ligth, $color-name);
+      @include box(map.get(caral.$base_dark, $color-name));
+      path {
+        fill: map.get(caral.$base_dark, $color-name);
+      }
+    }
+
+    &:active {
+      background-color: map.get(caral.$base_dark, $color-name);
+      @include caral.light("ligth");
+      path {
+        fill: caral.$flat-white-ligth;
+      }
+    }
+  }
+}
+.btn{
+  padding: 8px 16px;
+  border-radius: caral.$border;
+  @include caral.btn(md);
+  @include caral.font("p");
+  font-size: caral.$sice_p;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: ease 0.5s all;
+  &:disabled {
+    @include disabled();
+  }
+  
+}
+
+.btn-ligth{
+  background-color: caral.$flat-white-ligth;
+  color: caral.$carbon-ligth;
+  path{
+    fill: caral.$carbon-ligth;
+  }
+  &:hover{
+    @include box(caral.$hard-ligth);
+    path{
+      fill: caral.$hard-ligth;
+    }
+  }
+  &:disabled {
+    @include disabled();
+  }
+}
+
+.btn-outline{
+  background-color: transparent;
+  border: 1px solid caral.$hard-ligth;
+  color: caral.$hard-ligth;
+  path{
+    fill: caral.$hard-ligth;
+  }
+  &:hover{
+    background-color: caral.$hard-ligth;
+    color: caral.$flat-white-ligth;
+    path{
+      fill: caral.$flat-white-ligth;
+    }
+  }
+  &:disabled {
+    @include disabled();
+  }
+}
+
+
+.btn-large {
+  padding: 8px 25px;
+  width: fit-content;
+  @include caral.btn(lg);
+  font-size: caral.$size_large;
+  @include caral.font("large");
+
+  & .btn-icon-only{
+    width: caral.$Button_lg;
+    height: caral.$Button_lg;
+  }
+}
+
+.btn-icon-only{
+  width: caral.$Button_md;
+  height: caral.$Button_md;
+  gap: 0px;
+}
+
+.search{
+  @extend .btn;
+  @extend .btn-outline;
+  @extend .btn-icon-only; 
+  transition: ease 0.5s all;
+  interpolate-size: allow-keywords;
+  span{
+    display: none;
+  }
+  
+  &:hover{
+    background: transparent;
+    color: caral.$hard-ligth;
+    width: var(--Max_whidth);
+    justify-content: flex-start;
+    path{
+      fill: caral.$hard-ligth;
+    }
+    span{
+      display: inline-block;
+    }
+    
+  }
+}
+
+
+
+.plus{
+  @extend .btn-approve;
+  @extend .btn;
+  @extend .btn-icon-only; 
+  transition: ease 0.5s all;
+  interpolate-size: allow-keywords;
+  span{
+    display: none;
+    white-space: nowrap;
+  }
+  &:hover{
+    width: fit-content;
+    justify-content: flex-start;
+    gap: 15px;
+    span{
+      display: inline-block;
+    }
+    
+  }
+}
+
+
+.dark{
+  
+  & .btn-outline{
+  
+    border-color: caral.$flat-white-ligth;
+    color: caral.$flat-white-ligth;
+    path{
+      fill: caral.$flat-white-ligth;
+    }
+    &:hover{
+      background-color: caral.$flat-white-ligth;
+      color: caral.$flat-white-ligth;
+      path{
+        fill: caral.$flat-white-ligth;
+      }
+    }
+    &:disabled {
+      @include disabled();
+    }
+  }
+}
+
