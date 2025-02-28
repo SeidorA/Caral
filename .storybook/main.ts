@@ -7,13 +7,13 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    "@storybook/addon-styling-webpack",
+    "@storybook/addon-themes"
   ],
   framework: {
     name: "@storybook/react-vite",
     options: {},
   },
-  docs:{
-    autodocs: true,
-  }
+  staticDirs: ['../src/intro.mdx'],
 };
 export default config;

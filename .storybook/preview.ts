@@ -2,6 +2,7 @@ import type { Preview } from "@storybook/react";
 import "../src/sass/caral.scss"
 import "../src/index.css"
 
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -17,7 +18,6 @@ const preview: Preview = {
         { name: 'Dark', value: '#0F172B' },
       ],
     },
-
   },
 };
 

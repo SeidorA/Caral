@@ -19,7 +19,7 @@ export const Tab: FC<tabpromp> = ({ onClick, status = 'Default', title }) => {
     )
 }
 
-
+/** Enter the tabs that make up this grid */
 export const TabContainer: FC<PropsWithChildren> = ({ children }) => {
     return(
         <div className="rowtab">
