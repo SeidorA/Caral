@@ -1,5 +1,4 @@
 import { FC, PropsWithChildren } from "react";
-import "./button.scss";
 import { CaralIcon } from 'iconcaral2';
 
 interface BtnProps extends PropsWithChildren {
@@ -26,10 +25,15 @@ interface BtnProps extends PropsWithChildren {
 
 /**  Buttons allow users to perform actions or to trigger an event. */
 export const Btn: FC<BtnProps> = ({ children = "Buttom", color = "Default", icon , large= false, disabled = false, JustIcon = false, onClick, type= "button" }) => {
-  const btnClass = `btn ${color ? `btn-${color}` : ''} ${large ? 'btn-large' : ''} ${JustIcon ? 'btn-icon-only' : ''}`;
+  const btnClass = `btn ${color ? `bg-info` : ''} ${large ? 'btn-large' : ''} ${JustIcon ? 'btn-icon-only' : ''}`;
 
+  
+  const textColor = ["info", "approve", "warning", "danger", "indigo", "sakura", "Default"].includes(color) ? 'text-white' : 'text-carbon';
+  const btntail = `py-4 px-3 flex align-middle justify-center gap-2 transition-all duration-500 ease-in-out rounded-md bg-${color} ${textColor}`;
+  
+  
   return (
-    <button type={type} className={btnClass} disabled={disabled} onClick={onClick}>
+    <button type={type} className={btntail}  disabled={disabled} onClick={onClick}>
       {icon &&  <CaralIcon name={icon} /> }
       {!JustIcon && children}
     </button>
@@ -45,8 +49,8 @@ export const BtnSerach: FC<BtnProps> = ({Maxw = "700px", onClick }) => {
   } as React.CSSProperties;
 
   return (
-    <button className="search" style={style} onClick={onClick}> 
-      <CaralIcon name="Search"  />
+    <button className="search " style={style} onClick={onClick}> 
+      <CaralIcon name="Search "  />
       <span>Search</span>     
     </button>
   );

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Check } from "lucide-react";
 import './combobox.scss'
 import { CaralIcon } from 'iconcaral2';
+
 
 interface Option {
     category?: string;
@@ -44,7 +44,7 @@ export default function ComboBox({ options, searchable = true }: ComboBoxProps) 
                             />
                         )}
                         <ul>
-                            {filteredOptions.map((group, index) => (
+                            {filteredOptions.map((group) => (
                                 group.category ? (
                                     <div key={group.category} className="categori">
                                         <span className="categoria">{group.category}</span>

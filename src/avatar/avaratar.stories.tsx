@@ -15,7 +15,10 @@ type Story = StoryObj<typeof Avatar>;
 
 export const Default: Story = {
   args: {
-    bgcolor: "primary"
+    bgcolor: "approve",
+    color: "warning",
+    icon: "",
+    size: "md"
   }
 };
 
