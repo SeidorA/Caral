@@ -1,31 +1,31 @@
 import React from 'react';
 import { IconGallery, IconItem } from '@storybook/blocks';
-import { CaralIcon } from 'iconcaral2';
+import { CaralIcon, Icons } from 'iconcaral2';
 
-const nombres = ['menu','dots','list','pause','x','arrowDownToLine',"arrowUpToLine",'bluetooth',"bluetoothSlash", 
-  'Bolt','BoltSlash','Camera','CameraSecurity','cameraSecurityRoof','CharBarScreen','CharScreen','ChartFile','chartSimple','Circles','ClickCheck','ClickCursor','ClickTab','Cloud','CloudFly','CloudSync','CloudUp','Code','command','comments', 'commentsServer', 'Cube','Dron','FileDown','FileZip', 'Gear', 'Image', 'Job',
-  'Laptop', 'Magic','MapBranch','MensagePc', 'Mobile', 'MouseCalendar', 'Network' , 'PC', 'QR', 'Robot', 'Satellite','ShakePhone',
-  'ShieldHalved', 'SliderHorizontal', 'SliderVertical', "SMS", 'SquareFace','Storage','SunBright','SunMoon','Tab','ToggleOff', 'ToggleOn','UpRightFromSquare','Video','Volume', 'Wifi','WifiLeft','Wrench','wrenchPrice', 'Database','Folder'
-  ,'Play', 'Plus', 'Less' 
+const nombres: Partial<Icons>[] = ['menu', 'dots', 'list', 'pause', 'x', 'arrowDownToLine', "arrowUpToLine", 'bluetooth', "bluetoothSlash",
+  'bolt', 'boltSlash', 'camera', 'cameraSecurity', 'cameraSecurityRoof', 'charBarScreen', 'charScreen', 'chartFile', 'chartSimple', 'circles', 'clickCheck', 'clickCursor', 'clickTab', 'cloud', 'cloudFly', 'cloudSync', 'cloudUp', 'code', 'command', 'comments', 'commentsServer', 'cube', 'dron', 'fileDown', 'fileZip', 'gear', 'image', 'job',
+  'laptop', 'magic', 'mapBranch', 'mensagePc', 'mobile', 'mouseCalendar', 'network', 'pc', 'qr', 'robot', 'satellite', 'shakePhone',
+  'shieldHalved', 'sliderHorizontal', 'sliderVertical', "sms", 'squareFace', 'storage', 'sunBright', 'sunMoon', 'tab', 'toggleOff', 'toggleOn', 'upRightFromSquare', 'video', 'volume', 'wifi', 'wifiLeft', 'wrench', 'wrenchPrice', 'database', 'folder'
+  , 'play', 'plus', 'less'
 ]
-const movilidad = ['Airplane','Anchor','Bus','Car','Dispenser','Flag','Globe','GlobeMap','Helicopter','LocationPin','Map','Moto','Motorcycle','OilWell','Plane','PlaneArrival','PlaneDeparture','Scraper','SignsPost','Skateboard','SkateboardElectric','Trailer','Train','Truck','TruckMedical']
-const financial =[ "CalendaEuro","CreditCard","Dolar","DolarReceipt","DolarScreen","DollarTower","Euro","lock","lockOpen","MoneyBill","MoneySlash","moneyBills","Percent","PercentCircle","PiggyBank","Receipt","Bank","Calculator" ]
-const Buildings = ["building","City","hospital","house","key","shop","store","window"]
-const People = ["Accessible","Assist","Dislike","DislikeFile","Female","Like","LikeFile","Male","PeopleDress","PersonCopy","Search","SearchPerson","Star","User","UserConfig","users","usersMap","usersWifi"]
-const Health = ["healtFile","Stethoscope","Virus","Wave","WaveScreen"]
-const Contact = ["CircleInfo","Envelope","EnvelopeOpen","EnvelopeSend","InfoFile","Message","MessagePhone","TriangleExclamation","XCircle"]
-const Nature = ["Leaf","LeafPlant","Seedling","SeedlingBottle","SeedlingPot","wheat"]
-const Bussiness =["ArrowPointer","Box","BusinessTime","CheckFile","CheckSearch","CubeInCube","DropBox","EditFile","EditScreen","File","FlagPointer","PresentationScreenBar","PresentationScreenChart","Print","RefreshPresentation","screenBar","screenChart"]
-const innovation = ["BadgeArrowUp","BadgeSync","Bars","Chats","CircleBars","CupeUpView","DateCheck","DownStairs","FileClick","FileShare","HistoryChart","LigthOn","Puzzle","PuzzleOut","Schedule","ScreenView","UpStairs"]
-const Recovery = ["LockSlash","LockSquare","LockSync","Sync"]
-const Sales = ["CartShopping","CartShoppingCircle","CartShoppingPin","CartShoppingPlus","CartShoppingSlash"]
-const Others = ["Barbell","BasketShopping","Bell","Book","Bookmark","Calendar","CalendarTime","Certificate","Check","CheckBox","CheckList","Clock","Coffee","Edit","eye","eyeSlash","Filter","ID","Learn","Megaphone","Mesagge","NewFile","Newspaper","noFound","Note","Pin","Portafolio","Price","Price1","Quote","Save","ScaleBalanced","Signature","Trash","zoomIn","ZoomOut", "ContinueExecution", "CancelExecution"]
-const Arrows = ["ArrowDown","ArrowLeft","ArrowRight","ArrowUp","ArrowUpArrowDown","ArrowsLeftRight","ArrowsLeftRightToLine","ArrowsMaximize","ArrowsMinimize","ArrowsMove","ArrowsUpDown","ChevronDown","ChevronDownBox","ChevronDownCircle","ChevronLeft","ChevronLeftBox","ChevronLeftCircle","ChevronRigth","ChevronRigthBox","ChevronRigthCircle","ChevronUp","ChevronUpBox","ChevronUpCircle","ChevronsDown","ChevronsLeft","ChevronsRigth","ChevronsUp"]
-const Brands = ["AzureSql","Redshift","Azure","CloudStorage","GoogleStorage","Oracle","Saleforce","snowflake","AWS","SAP","Teradata","Cloudera","Google", "Databricks", "OData"]
-const joins = ["FullJoin","FullJoinW","InnerJoin","LeftJoin","LeftJoinW","RigthJoin","RigthJoinW", ]
+const movilidad: Partial<Icons>[] = ['airplane', 'anchor', 'bus', 'car', 'dispenser', 'flag', 'globe', 'globeMap', 'helicopter', 'locationPin', 'map', 'moto', 'motorcycle', 'oilWell', 'plane', 'planeArrival', 'planeDeparture', 'scraper', 'signsPost', 'skateboard', 'skateboardElectric', 'trailer', 'train', 'truck', 'truckMedical']
+const financial: Partial<Icons>[] = ['calendaEuro', 'creditCard', 'dolar', 'dolarReceipt', 'dolarScreen', 'dollarTower', 'euro', 'lock', 'lockOpen', 'moneyBill', 'moneySlash', 'moneyBills', 'percent', 'percentCircle', 'piggyBank', 'receipt', 'bank', 'calculator']
+const Buildings: Partial<Icons>[] = ['building', 'city', 'hospital', 'house', 'key', 'shop', 'store', 'window']
+const People: Partial<Icons>[] = ['accessible', 'assist', 'dislike', 'dislikeFile', 'female', 'like', 'likeFile', 'male', 'peopleDress', 'personCopy', 'search', 'searchPerson', 'star', 'user', 'userConfig', 'users', 'usersMap', 'usersWifi']
+const Health: Partial<Icons>[] = ['healtFile', 'stethoscope', 'virus', 'wave', 'waveScreen']
+const Contact: Partial<Icons>[] = ['circleInfo', 'envelope', 'envelopeOpen', 'envelopeSend', 'infoFile', 'message', 'messagePhone', 'triangleExclamation', 'xCircle']
+const Nature: Partial<Icons>[] = ['leaf', 'leafPlant', 'seedlingPot', 'seedlingBottle', 'seedlingPot', 'wheat']
+const Bussiness: Partial<Icons>[] = ['arrowPointer', 'box', 'businessTime', 'checkFile', 'checkSearch', 'cubeInCube', 'dropBox', 'editFile', 'editScreen', 'file', 'flagPointer', 'presentationScreenBar', 'presentationScreenChart', 'print', 'refreshPresentation', 'screenBar', 'screenChart']
+const innovation: Partial<Icons>[] = ['badgeArrowUp', 'badgeSync', 'bars', 'chats', 'circleBars', 'cupeUpView', 'dateCheck', 'downStairs', 'fileClick', 'fileShare', 'historyChart', 'ligthOn', 'puzzle', 'puzzleOut', 'schedule', 'screenView', 'upStairs']
+const Recovery: Partial<Icons>[] = ['lockSlash', 'lockSquare', 'lockSync', 'sync']
+const Sales: Partial<Icons>[] = ['cartShopping', 'cartShoppingCircle', 'cartShoppingPin', 'cartShoppingPlus', 'cartShoppingSlash']
+const Others: Partial<Icons>[] = ['barbell', 'basketShopping', 'bell', 'book', 'bookmark', 'calendar', 'calendarTime', 'certificate', 'check', 'checkBox', 'checkList', 'clock', 'coffee', 'edit', 'eye', 'eyeSlash', 'filter', 'iD', 'learn', 'megaphone', 'mesagge', 'newFile', 'newspaper', 'noFound', 'note', 'pin', 'portafolio', 'price', 'price1', 'quote', 'save', 'scaleBalanced', 'signature', 'trash', 'zoomIn', 'zoomOut', 'continueExecution', 'cancelExecution']
+const Arrows: Partial<Icons>[] = ['arrowDown', 'arrowLeft', 'arrowRight', 'arrowUp', 'arrowUpArrowDown', 'arrowsLeftRight', 'arrowsLeftRightToLine', 'arrowsMaximize', 'arrowsMinimize', 'arrowsMove', 'arrowsUpDown', 'chevronDown', 'chevronDownBox', 'chevronDownCircle', 'chevronLeft', 'chevronLeftBox', 'chevronLeftCircle', 'chevronRigth', 'chevronRigthBox', 'chevronRigthCircle', 'chevronUp', 'chevronUpBox', 'chevronUpCircle', 'chevronsDown', 'chevronsLeft', 'chevronsRigth', 'chevronsUp']
+const Brands: Partial<Icons>[] = ["AzureSql", "redshift", "Azure", "cloudStorage", "GoogleStorage", "oracle", "Saleforce", "Snowflake", "AWS", "SAP", "Teradata", "Cloudera", "Google", "Databricks", "OData"]
+const joins: Partial<Icons>[] = ['fullJoin', 'fullJoinW', 'innerJoin', 'leftJoin', 'leftJoinW', 'rigthJoin', 'rigthJoinW']
 
 interface IconGalleryProps {
-  items: string[];
+  items: Partial<Icons>[];
 }
 
 const ReusableIconGallery: React.FC<IconGalleryProps> = ({ items }) => {
