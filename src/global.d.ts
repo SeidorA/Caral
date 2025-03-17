@@ -1,0 +1,16 @@
+type IconType = 
+    | 'airplane' | 'anchor' | 'bus' | 'car' | 'dispenser' | 'flag' | 'globe' | 'globeMap' | 'helicopter' | 'locationPin' | 'map' | 'moto' | 'motorcycle' | 'oilWell' | 'plane' | 'planeArrival' | 'planeDeparture' | 'scraper' | 'signsPost' | 'skateboard' | 'skateboardElectric' | 'trailer' | 'train' | 'truck' | 'truckMedical'
+    | 'calendaEuro' | 'creditCard' | 'dolar' | 'dolarReceipt' | 'dolarScreen' | 'dollarTower' | 'euro' | 'lock' | 'lockOpen' | 'moneyBill' | 'moneySlash' | 'moneyBills' | 'percent' | 'percentCircle' | 'piggyBank' | 'receipt' | 'bank' | 'calculator'
+    | 'building' | 'city' | 'hospital' | 'house' | 'key' | 'shop' | 'store' | 'window'
+    | 'accessible' | 'assist' | 'dislike' | 'dislikeFile' | 'female' | 'like' | 'likeFile' | 'male' | 'peopleDress' | 'personCopy' | 'search' | 'searchPerson' | 'star' | 'user' | 'userConfig' | 'users' | 'usersMap' | 'usersWifi'
+    | 'healtFile' | 'stethoscope' | 'virus' | 'wave' | 'waveScreen'
+    | 'circleInfo' | 'envelope' | 'envelopeOpen' | 'envelopeSend' | 'infoFile' | 'message' | 'messagePhone' | 'triangleExclamation' | 'xCircle'
+    | 'leaf' | 'leafPlant' | 'seedling' | 'seedlingBottle' | 'seedlingPot' | 'wheat'
+    | 'arrowPointer' | 'box' | 'businessTime' | 'checkFile' | 'checkSearch' | 'cubeInCube' | 'dropBox' | 'editFile' | 'editScreen' | 'file' | 'flagPointer' | 'presentationScreenBar' | 'presentationScreenChart' | 'print' | 'refreshPresentation' | 'screenBar' | 'screenChart'
+    | 'badgeArrowUp' | 'badgeSync' | 'bars' | 'chats' | 'circleBars' | 'cupeUpView' | 'dateCheck' | 'downStairs' | 'fileClick' | 'fileShare' | 'historyChart' | 'ligthOn' | 'puzzle' | 'puzzleOut' | 'schedule' | 'screenView' | 'upStairs'
+    | 'lockSlash' | 'lockSquare' | 'lockSync' | 'sync'
+    | 'cartShopping' | 'cartShoppingCircle' | 'cartShoppingPin' | 'cartShoppingPlus' | 'cartShoppingSlash'
+    | 'barbell' | 'basketShopping' | 'bell' | 'book' | 'bookmark' | 'calendar' | 'calendarTime' | 'certificate' | 'check' | 'checkBox' | 'checkList' | 'clock' | 'coffee' | 'edit' | 'eye' | 'eyeSlash' | 'filter' | 'id' | 'learn' | 'megaphone' | 'mesagge' | 'newFile' | 'newspaper' | 'noFound' | 'note' | 'pin' | 'portafolio' | 'price' | 'price1' | 'quote' | 'save' | 'scaleBalanced' | 'signature' | 'trash' | 'zoomIn' | 'zoomOut' | 'continueExecution' | 'cancelExecution'
+    | 'arrowDown' | 'arrowLeft' | 'arrowRight' | 'arrowUp' | 'arrowUpArrowDown' | 'arrowsLeftRight' | 'arrowsLeftRightToLine' | 'arrowsMaximize' | 'arrowsMinimize' | 'arrowsMove' | 'arrowsUpDown' | 'chevronDown' | 'chevronDownBox' | 'chevronDownCircle' | 'chevronLeft' | 'chevronLeftBox' | 'chevronLeftCircle' | 'chevronRigth' | 'chevronRigthBox' | 'chevronRigthCircle' | 'chevronUp' | 'chevronUpBox' | 'chevronUpCircle' | 'chevronsDown' | 'chevronsLeft' | 'chevronsRigth' | 'chevronsUp'
+    | 'azureSql' | 'redshift' | 'azure' | 'cloudStorage' | 'googleStorage' | 'oracle' | 'saleforce' | 'snowflake' | 'aws' | 'sap' | 'teradata' | 'cloudera' | 'google' | 'databricks' | 'oData'
+    | 'fullJoin' | 'fullJoinW' | 'innerJoin' | 'leftJoin' | 'leftJoinW' | 'rigthJoin' | 'rigthJoinW';

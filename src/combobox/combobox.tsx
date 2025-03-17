@@ -29,7 +29,7 @@ export default function ComboBox({ options, searchable = true }: ComboBoxProps) 
         <div className="combobox">
             <button onClick={() => setOpen(!open)} className="selectCombo">
                 {selected ? selected.label : "Select an option"}
-                <span className={`arrow ${open ? "rotate-180" : ""}`}><CaralIcon name="ChevronDown" /></span>
+                <span className={`arrow ${open ? "rotate-180" : ""}`}><CaralIcon name="chevronDown" /></span>
             </button>
             <div className={`content ${open ? "open_content" : "close_content"}`}>
                 {open && (
@@ -44,7 +44,11 @@ export default function ComboBox({ options, searchable = true }: ComboBoxProps) 
                             />
                         )}
                         <ul>
+<<<<<<< HEAD
                             {filteredOptions.map((group) => (
+=======
+                            {filteredOptions.map((group, _) => (
+>>>>>>> 5b2690c124793cb4249b3d52a863437a79c69dcc
                                 group.category ? (
                                     <div key={group.category} className="categori">
                                         <span className="categoria">{group.category}</span>
@@ -59,7 +63,7 @@ export default function ComboBox({ options, searchable = true }: ComboBoxProps) 
                                                     }}
                                                 >
                                                     {item.label}
-                                                    {selected?.value === item.value && <CaralIcon sice="sm" name="Check" />}
+                                                    {selected?.value === item.value && <CaralIcon name="check" />}
                                                 </li>
                                             ))}
                                         </ul>
@@ -75,7 +79,7 @@ export default function ComboBox({ options, searchable = true }: ComboBoxProps) 
                                             }}
                                         >
                                             {item.label}
-                                            {selected?.value === item.value && <CaralIcon sice="sm" name="Check" />}
+                                            {selected?.value === item.value && <CaralIcon name="check" />}
                                         </li>
                                     ))
                                 )
