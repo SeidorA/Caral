@@ -44,11 +44,7 @@ export default function ComboBox({ options, searchable = true }: ComboBoxProps) 
                             />
                         )}
                         <ul>
-<<<<<<< HEAD
-                            {filteredOptions.map((group) => (
-=======
                             {filteredOptions.map((group, _) => (
->>>>>>> 5b2690c124793cb4249b3d52a863437a79c69dcc
                                 group.category ? (
                                     <div key={group.category} className="categori">
                                         <span className="categoria">{group.category}</span>

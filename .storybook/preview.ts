@@ -1,5 +1,4 @@
 import type { Preview } from "@storybook/react";
-import "../src/sass/caral.scss"
 import "../src/index.css"
 
 

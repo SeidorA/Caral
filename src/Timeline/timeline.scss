@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    
 }
 
 .dot-Done{
@@ -87,30 +88,10 @@
      
 }
 
-.timeline{
 
-    position: relative;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: map.get(caral.$avatar_sice, "sm");
-    .dot{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);        
-        width: map.get(caral.$avatar_sice, "sm");
-        height: map.get(caral.$avatar_sice, "sm");
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-
-    }
-    .line-conector{
-        height: 50%;
-        width: 2px;
-        @include caral.colorvalue("ligth", "hard", "background" );
-    }
+.line-conector{
+    height: 100px;
+    width: 2px;
+    @include caral.colorvalue("ligth", "hard", "background" );
 }
