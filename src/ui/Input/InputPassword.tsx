@@ -1,8 +1,8 @@
-import * as React from "react"
 import { CaralIcon } from "iconcaral2"
-import { Button } from "../Button/Button"
-import { Input } from "./Input"
-import { cn } from "../../lib/utils"
+import * as React from "react"
+import { Input } from "."
+import { cn } from "../../utils"
+import { Button } from "../Button"
 
 const InputPassword = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
     ({ className, type, ...props }, ref) => {
