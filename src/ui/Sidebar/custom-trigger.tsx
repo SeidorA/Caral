@@ -2,7 +2,7 @@
 import { CaralIcon, Icons } from "iconcaral2"
 import { useSidebar } from "."
 import { useIsMobile } from "../../hooks/use-mobile"
-import { cn } from "../../utils"
+import { cn } from "../../lib/utils"
 import { Button } from "../Button"
 
 export function CustomTrigger({ side }: { side: "left" | "right" }) {
