@@ -5,7 +5,7 @@ import { Command as CommandPrimitive } from "cmdk"
 import * as React from "react"
 
 import { CaralIcon, Icons } from "iconcaral2"
-import { cn } from "../../utils"
+import { cn } from "../../lib/utils"
 import { Dialog, DialogContent } from "../Dialog"
 
 const Command = React.forwardRef<

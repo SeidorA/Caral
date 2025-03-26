@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ComponentProps } from "react";
 import { Separator } from ".";
-import { cn } from "../../utils";
+import { cn } from "../../lib/utils";
 
 type StoryProps = ComponentProps<typeof Separator>;
 

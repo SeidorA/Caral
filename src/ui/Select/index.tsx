@@ -3,7 +3,7 @@
 import * as SelectPrimitive from "@radix-ui/react-select"
 import { CaralIcon } from "iconcaral2"
 import * as React from "react"
-import { cn } from "../../utils"
+import { cn } from "../../lib/utils"
 
 const Select = SelectPrimitive.Root
 

@@ -74,32 +74,32 @@ const config = {
                     },
                     aprove: {
                         light: '#ACFFE4',
-                        default: '#44CA9F',
+                        DEFAULT: '#44CA9F',
                         hard: '#13644A',
                     },
                     info: {
                         light: '#99D3FF',
-                        default: '#0191FF', // hsl(206, 100%, 50.2%)
+                        DEFAULT: '#0191FF', // hsl(206, 100%, 50.2%)
                         hard: '#006ABB',
                     },
                     warning: {
                         light: '#FFF3E5',
-                        default: '#F88A00',
+                        DEFAULT: '#F88A00',
                         hard: '#B46400',
                     },
                     danger: {
                         light: '#FFEDED',
-                        default: '#EF4444',
+                        DEFAULT: '#EF4444',
                         hard: '#560505',
                     },
                     indigo: {
                         light: '#F2DCFF',
-                        default: '#3C096C',
+                        DEFAULT: '#3C096C',
                         hard: '#240046',
                     },
                     sakura: {
                         light: '#FFD0E5',
-                        default: '#ff2e8c',
+                        DEFAULT: '#ff2e8c',
                         hard: '#B1004F',
                     },
                 },

@@ -3,7 +3,7 @@
 import * as React from "react"
 
 import { CaralIcon, Icons } from "iconcaral2"
-import { cn } from "../../utils"
+import { cn } from "../../lib/utils"
 import { Button } from "../Button"
 import {
   Command,
