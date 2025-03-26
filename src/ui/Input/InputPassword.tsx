@@ -1,7 +1,7 @@
 import { CaralIcon } from "iconcaral2"
 import * as React from "react"
 import { Input } from "."
-import { cn } from "../../utils"
+import { cn } from "../../lib/utils"
 import { Button } from "../Button"
 
 const InputPassword = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
