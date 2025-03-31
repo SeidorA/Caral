@@ -12,6 +12,8 @@ const config: StorybookConfig = {
     "@storybook/experimental-addon-test",
 
     '@storybook/addon-storysource',
+    '@storybook/addon-docs',
+    "@whitespace/storybook-addon-html",
   ],
   "framework": {
     "name": "@storybook/react-vite",

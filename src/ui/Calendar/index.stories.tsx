@@ -20,15 +20,22 @@ const meta: Meta<CalendarProps> = {
     mode: {
       control: { type: "select" },
       options: ["single", "range"],
+      description: 'Select the type of calendar to be displayed whether it is a single date or a time range.'
     },
     numberOfMonths: {
       if: { arg: 'mode', eq: 'range' },
       control: { type: "number" },
+      
     },
     defaultMonth: {
       if: { arg: 'mode', eq: 'range' },
       control: { type: "date" },
     },
+    showOutsideDays: {
+      control: { type: "boolean" },
+      description: 'Displays the months that complete the week of the next month shown on the screen.'
+    },
+
   },
   decorators: [
     (Story) => (

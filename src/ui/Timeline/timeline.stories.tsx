@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Timeline, TimelineItem } from './timeline';
 
 const meta: Meta<typeof Timeline> = {
-title: "Components/timeline/Vertical",
+title: "ui/timeline/Vertical",
   tags: ["autodocs"],
   component: Timeline,
 };

@@ -5,7 +5,7 @@ import { TimeStep } from './timeline';
 
 
 const meta: Meta<typeof TimeStep> = {
-title: "Components/timeline/Horizontal",
+title: "ui/timeline/Horizontal",
   tags: ["autodocs"],
   component: TimeStep,
 };

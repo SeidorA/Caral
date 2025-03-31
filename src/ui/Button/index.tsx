@@ -45,6 +45,7 @@ const buttonVariants = cva(
 
 export interface ButtonProps
     extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    /** Color Del boton */
     VariantProps<typeof buttonVariants> {
     asChild?: boolean
     iconName?: Icons

@@ -7,7 +7,7 @@ import { Checkbox } from "../Checkbox";
 type StoryProps = ComponentProps<typeof Label>;
 
 const meta: Meta<StoryProps> = {
-    title: "UI/Label",
+    title: "UI/Form Components/Label",
     component: Label,
     tags: ["autodocs"],
     parameters: {

@@ -5,7 +5,7 @@ import { Combobox } from '.'
 type CombobosProps = ComponentProps<typeof Combobox>
 
 const meta: Meta = {
-  title: 'UI/Combobox',
+  title: 'UI/Form Components/Combobox',
   component: Combobox,
   tags: ['autodocs'],
   parameters: {

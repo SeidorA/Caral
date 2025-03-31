@@ -17,8 +17,16 @@ const preview: Preview = {
   parameters: {
     controls: {
       matchers: {
-        
         date: /Date$/i,
+      },
+    },
+    
+    docs: {
+      transformSource: (input: string) => {
+        return input.replace(
+          /({\s*args:\s*{([^}]+)}\s*},\s*render:\s*\(\s*props\s*\)\s*=>\s*<\s*([^ ]+)\s*{...props}\s*\/>)/,
+          `<$3 $2 />`
+        );
       },
     },
   },

@@ -9,7 +9,7 @@ type ScrollableSelectProps = ComponentProps<typeof SelectScrollableComponent>
 type SelectProps = ComponentProps<typeof Select>
 
 const meta: Meta<SelectComponentProps> = {
-  title: 'UI/Select',
+  title: 'UI/Form Components/Select',
   component: Select,
   tags: ['autodocs'],
   parameters: {

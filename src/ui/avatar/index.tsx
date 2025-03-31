@@ -6,6 +6,11 @@ import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "../../lib/utils"
 
+/** 
+ * It can display images, icons or user initials, with different sizes and shapes to suit different contexts. 
+ * 
+ * It is used in user profiles, comments, chat participant lists and team views to aid in quick identification. 
+*/
 const Avatar = React.forwardRef<
     React.ElementRef<typeof AvatarPrimitive.Root>,
     React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>

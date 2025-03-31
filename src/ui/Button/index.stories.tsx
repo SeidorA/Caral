@@ -2,12 +2,13 @@ import { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 import { ComponentProps } from "react";
 import { Button } from ".";
+import { iconGroups } from '../../atoms/icons';
 
 
 type StoryProps = ComponentProps<typeof Button>;
 
 const meta: Meta<StoryProps> = {
-    title: "UI/Button",
+    title: "UI/Form Components/Button",
     component: Button,
     tags: ["autodocs"],
     parameters: {
@@ -18,19 +19,29 @@ const meta: Meta<StoryProps> = {
         variant: {
             control: { type: "select" },
             options: ["default", "aprove", "danger", "indigo", "info", "sakura", "warning", "outline", "ghost", "link"],
+            description: 'Used to describe the color of the button',
+            defaultValue: ["default"]
+        },
+        children:{
+            description: 'The content of the button'
         },
         size: {
             control: { type: "select" },
             options: ["default", "sm", "lg", "icon"],
+            description: 'Determines the size of the button or if it includes an icon'
         },
         type: {
             control: { type: "select" },
             options: ["submit", "reset", "button"],
+            description: 'Determines what type of button it is'
         },
         iconName: {
             if: { arg: 'size', eq: 'icon' },
             control: { type: "select" },
-        }
+            options: Object.keys(iconGroups).reduce<string[]>((acc, key) => [...acc, ...iconGroups[key]], []),
+            description: 'Name of the icon you want to include in the button'
+        },
+    
     },
     args: { onClick: fn() },
 };
@@ -47,11 +58,15 @@ export const Default: Story = {
         variant: "default",
         type: "button",
         asChild: false,
+
     },
     render: (props) => <Button {...props} />,
 };
 
+
+
 export const Colors: Story = {
+    
     args: {
         children: "Button Caral",
     },
