@@ -76,9 +76,9 @@ const avatarVariants = cva(
                 sakura:
                     "bg-seidor-sakura text-white shadow-sm hover:bg-seidor-sakura/90",
                 outline:
-                    "border border-seidor-gray-hard bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+                    "border border-seidor-gray-hard text-seidor-blue-dark bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
                 ghost: "hover:bg-accent hover:text-accent-foreground",
-                link: "text-primary underline-offset-4 hover:underline",
+                link: "text-seidor-info bg-transparent underline-offset-4 hover:underline",
             },
             size: {
                 default: "h-10 w-10 text-base",
@@ -102,7 +102,7 @@ export interface AvatarProps
 }
 
 export const AvatarComponent = React.forwardRef<HTMLDivElement, AvatarProps>(
-    ({ className, src, fallback, size, ...props }, ref) => {
+    ({ className, src, fallback, size, variant, ...props }, ref) => {
         return (
             <Avatar
                 className={cn(avatarVariants({ size, className }))}
@@ -110,7 +110,7 @@ export const AvatarComponent = React.forwardRef<HTMLDivElement, AvatarProps>(
                 {...props}
             >
                 <AvatarImage src={src} alt="avatar" />
-                <AvatarFallback>{fallback}</AvatarFallback>
+                <AvatarFallback className={cn(avatarVariants({ size, variant, className }))}>{fallback}</AvatarFallback>
             </Avatar>
         )
     }
