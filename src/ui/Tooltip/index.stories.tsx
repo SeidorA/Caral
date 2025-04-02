@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ComponentProps } from "react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from ".";
+import { Button } from "../Button";
 
 
 type StoryProps = ComponentProps<typeof Tooltip & { content: string }>;
@@ -32,8 +33,8 @@ export const Default: Story = {
     return (
       <TooltipProvider>
         <Tooltip>
-          <TooltipTrigger>
-            {props.children}
+          <TooltipTrigger asChild>
+            <Button variant={'ghost'}> {props.children}</Button>
           </TooltipTrigger>
           <TooltipContent>
             <p>Add to library</p>
