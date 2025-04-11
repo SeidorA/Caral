@@ -54,3 +54,34 @@ export const Fallback: Story = {
   render: (args) => <AvatarComponent {...args} />,
 };
 
+export const Sizes: Story = {
+  args: {
+    src: "https:/gravatar.com/avatar/1",
+    fallback: "NN",
+  },
+  render: (args) => <div className="flex items-center gap-2">
+    <AvatarComponent {...args} size="sm" />
+    <AvatarComponent {...args} size="default" />
+    <AvatarComponent {...args} size="md" />
+    <AvatarComponent {...args} size="lg" />
+  </div>,
+};
+
+export const Colors: Story = {
+  args: {
+    fallback: "NN"
+  },
+
+  render: (args) => <div className="flex items-center gap-2">
+    <AvatarComponent {...args} variant="default" />
+    <AvatarComponent {...args} variant="info" />
+    <AvatarComponent {...args} variant="aprove" />
+    <AvatarComponent {...args} variant="warning" />
+    <AvatarComponent {...args} variant="danger" />
+    <AvatarComponent {...args} variant="indigo" />
+    <AvatarComponent {...args} variant="sakura" />
+    <AvatarComponent {...args} variant="outline" />
+    <AvatarComponent {...args} variant="ghost" />
+    <AvatarComponent {...args} variant="link" />
+  </div>,
+};
