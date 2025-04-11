@@ -5,7 +5,7 @@ import { AvatarComponent } from '.';
 type AvatarProps = React.ComponentProps<typeof AvatarComponent>;
 
 const meta: Meta<AvatarProps> = {
-  title: "UI/Avatar",
+  title: "UI/Avatar/avatar",
   tags: ["autodocs"],
   component: AvatarComponent,
   parameters: {
