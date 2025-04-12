@@ -3,7 +3,6 @@ import { ComponentProps } from "react";
 import { Input } from ".";
 import { Label } from "../Label";
 import { InputPassword } from "./InputPassword";
-import { Controls, Description } from "@storybook/blocks";
 
 
 type StoryProps = ComponentProps<typeof Input>;
@@ -21,7 +20,7 @@ const meta: Meta<StoryProps> = {
             options: ["button", "checkbox", "color", "date", "datetime-local", "email", "file", "hidden", "image", "month", "number", "password", "radio", "range", "reset", "search", "submit", "tel", "text", "time", "url", "week"],
             description: 'An input can have different text-based types based on the type of value the user will enter.'
         },
-        placeholder:{
+        placeholder: {
             description: "Placeholder text for the input. If using this instead of a label (which is not recommended), be sure to provide an aria-label for screen reader users."
         },
         id: {
