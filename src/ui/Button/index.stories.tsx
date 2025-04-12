@@ -22,7 +22,7 @@ const meta: Meta<StoryProps> = {
             description: 'Used to describe the color of the button',
             defaultValue: ["default"]
         },
-        children:{
+        children: {
             description: 'The content of the button'
         },
         size: {
@@ -38,10 +38,9 @@ const meta: Meta<StoryProps> = {
         iconName: {
             if: { arg: 'size', eq: 'icon' },
             control: { type: "select" },
-            options: Object.keys(iconGroups).reduce<string[]>((acc, key) => [...acc, ...iconGroups[key]], []),
+            options: Object.keys(iconGroups).reduce<string[]>((acc, key) => [...acc, ...(iconGroups[key as keyof typeof iconGroups] || [])], []),
             description: 'Name of the icon you want to include in the button'
         },
-    
     },
     args: { onClick: fn() },
 };
@@ -66,7 +65,7 @@ export const Default: Story = {
 
 
 export const Colors: Story = {
-    
+
     args: {
         children: "Button Caral",
     },
