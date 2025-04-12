@@ -5,7 +5,7 @@ import { AvatarComponent } from '.';
 type AvatarProps = React.ComponentProps<typeof AvatarComponent>;
 
 const meta: Meta<AvatarProps> = {
-  title: "UI/Avatar/avatar",
+  title: "UI/Avatar/Avatar",
   tags: ["autodocs"],
   component: AvatarComponent,
   parameters: {
@@ -38,7 +38,7 @@ type Story = StoryObj<AvatarProps>;
 
 export const Default: Story = {
   args: {
-    src: "https:/gravatar.com/avatar/1",
+    src: "https://gravatar.com/avatar/1",
     fallback: "NN",
     size: "default",
   },
@@ -56,7 +56,7 @@ export const Fallback: Story = {
 
 export const Sizes: Story = {
   args: {
-    src: "https:/gravatar.com/avatar/1",
+    src: "https://gravatar.com/avatar/1",
     fallback: "NN",
   },
   render: (args) => <div className="flex items-center gap-2">
@@ -84,4 +84,14 @@ export const Colors: Story = {
     <AvatarComponent {...args} variant="ghost" />
     <AvatarComponent {...args} variant="link" />
   </div>,
+};
+
+export const Group: Story = {
+  render: () => (
+    <div className="flex -space-x-2">
+      {Array.from({ length: 5 }, (_, index) => (
+        <AvatarComponent key={index} fallback="NN" size="default" variant="outline" className='ring-2 ring-seidor-aprove' />
+      ))}
+    </div>
+  ),
 };

@@ -97,11 +97,11 @@ const avatarVariants = cva(
 export interface AvatarProps
     extends React.ComponentProps<typeof Avatar>,
     VariantProps<typeof avatarVariants> {
-    src: string
+    src?: string
     fallback: string
 }
 
-export const AvatarComponent = React.forwardRef<HTMLDivElement, AvatarProps>(
+export const AvatarComponent = React.forwardRef<HTMLElement, AvatarProps>(
     ({ className, src, fallback, size, variant, ...props }, ref) => {
         return (
             <Avatar
