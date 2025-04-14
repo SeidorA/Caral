@@ -3,27 +3,27 @@ import "./index.css";
 
 // Importar los componentes de la biblioteca
 export { CaralIcon } from 'iconcaral2';
+export * from './components/Avatar';
+export * from './components/Avatar/stack';
+export * from './components/Button';
+export * from './components/Calendar';
+export * from './components/Checkbox';
+export * from './components/Combobox';
+export * from './components/Command';
+export * from './components/Dialog';
+export * from './components/Field';
+export * from './components/Input';
+export * from './components/Input/InputPassword';
+export * from './components/Label';
+export * from './components/Popover';
+export * from './components/Select';
+export * from './components/Skeleton';
+export * from './components/Sonner';
+export * from './components/Tabs';
+export * from './components/Timeline';
+export * from './components/Title';
+export * from './components/Tooltip';
 export * from './lib/utils';
-export * from './ui/Avatar';
-export * from './ui/Avatar/stack';
-export * from './ui/Button';
-export * from './ui/Calendar';
-export * from './ui/Checkbox';
-export * from './ui/Combobox';
-export * from './ui/Command';
-export * from './ui/Dialog';
-export * from './ui/Field';
-export * from './ui/Input';
-export * from './ui/Input/InputPassword';
-export * from './ui/Label';
-export * from './ui/Popover';
-export * from './ui/Select';
-export * from './ui/Skeleton';
-export * from './ui/Sonner';
-export * from './ui/Tabs';
-export * from './ui/Timeline';
-export * from './ui/Title';
-export * from './ui/Tooltip';
 
 // Utilidades
 import { useIsMobile } from './hooks/use-mobile';
