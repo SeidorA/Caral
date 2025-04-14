@@ -51,5 +51,5 @@ const InputPassword = React.forwardRef<HTMLInputElement, React.ComponentProps<"i
 
 InputPassword.displayName = "InputPassword"
 
-export { Input, InputPassword }
+export { InputPassword }
 

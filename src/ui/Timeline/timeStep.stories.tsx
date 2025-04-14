@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TimeStep } from './timeline';
+import { TimeStep } from '.';
 
 
 
 const meta: Meta<typeof TimeStep> = {
-title: "ui/timeline/Horizontal",
+  title: "ui/timeline/Horizontal",
   tags: ["autodocs"],
   component: TimeStep,
 };
@@ -15,7 +15,7 @@ type Story = StoryObj<typeof TimeStep>;
 
 
 
-  
+
 export const Simple: Story = {
   args: {
     status: "Done",
@@ -28,17 +28,17 @@ export const Simple: Story = {
 
 
 export const row: Story = {
-    render: (args) => (
-        <div className="flex">
-            <TimeStep {...args} />
-            <TimeStep {...args} />
-            <TimeStep number={3} line={false} status='Default' title="Final" />
-        </div>
-    ),
-    args: {
-        status: "Done",
-        title: "Hola",
-        line: true,
-        first: true,
-    }
+  render: (args) => (
+    <div className="flex">
+      <TimeStep {...args} />
+      <TimeStep {...args} />
+      <TimeStep number={3} line={false} status='Default' title="Final" />
+    </div>
+  ),
+  args: {
+    status: "Done",
+    title: "Hola",
+    line: true,
+    first: true,
+  }
 };

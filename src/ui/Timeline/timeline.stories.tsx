@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Timeline, TimelineItem } from './timeline';
+import { Timeline, TimelineItem } from '.';
 
 const meta: Meta<typeof Timeline> = {
-title: "ui/timeline/Vertical",
+  title: "ui/timeline/Vertical",
   tags: ["autodocs"],
   component: Timeline,
 };
@@ -11,7 +11,7 @@ title: "ui/timeline/Vertical",
 export default meta;
 type Story = StoryObj<typeof Timeline>;
 
-  
+
 export const Default: Story = {
   args: {
     status: "Done",
@@ -24,26 +24,26 @@ export const Default: Story = {
 
 
 export const row: Story = {
-    render: (args) => (
-        <div className="flex flex-col gap-0">
-            <TimelineItem status='Done' line={true} first={false} end={true}>
-              <p className='h-60 bg-seidor-blue-dark text-white p-5'>Children</p>
-            </TimelineItem>
+  render: () => (
+    <div className="flex flex-col gap-0">
+      <TimelineItem status='Done' line={true} first={false} end={true}>
+        <p className='h-60 bg-seidor-blue-dark text-white p-5'>Children</p>
+      </TimelineItem>
 
-            <TimelineItem status='Done' line={true} first={true} end={true}>
-              <p className='h-60 bg-seidor-blue-dark text-white p-5'>Children</p>
-            </TimelineItem>
+      <TimelineItem status='Done' line={true} first={true} end={true}>
+        <p className='h-60 bg-seidor-blue-dark text-white p-5'>Children</p>
+      </TimelineItem>
 
-            <TimelineItem status='Done' line={true} first={true} end={false}>
-              <p className='h-60 bg-seidor-blue-dark text-white p-5'>Children</p>
-            </TimelineItem>
-        </div>
-    ),
-    args: {
-        status: "Done",
-        title: "Hola",
-        line: true,
-        first: true,
-        end: true
-    }
+      <TimelineItem status='Done' line={true} first={true} end={false}>
+        <p className='h-60 bg-seidor-blue-dark text-white p-5'>Children</p>
+      </TimelineItem>
+    </div>
+  ),
+  args: {
+    status: "Done",
+    title: "Hola",
+    line: true,
+    first: true,
+    end: true
+  }
 };

@@ -1,7 +1,7 @@
-import React from 'react';
 import { IconGallery, IconItem } from '@storybook/blocks';
 import { CaralIcon, Icons } from 'iconcaral2';
-import {iconGroups} from './icons';
+import React from 'react';
+import { iconGroups } from './icons';
 
 const nombres = iconGroups.nombres
 
@@ -13,7 +13,7 @@ const Health = iconGroups.Health
 const Contact = iconGroups.Contact
 const Nature = iconGroups.Nature
 const Bussiness = iconGroups.Bussiness
-const innovation =iconGroups.innovation
+const innovation = iconGroups.innovation
 const Recovery = iconGroups.Recovery
 const Sales = iconGroups.Sales
 const Others = iconGroups.Others
@@ -22,15 +22,15 @@ const Brands = iconGroups.Brands
 const joins = iconGroups.joins
 
 interface IconGalleryProps {
-  items: Partial<Icons>[];
+  items: string[]; // Cambiado a string[] para aceptar un arreglo de cadenas
 }
 
 const ReusableIconGallery: React.FC<IconGalleryProps> = ({ items }) => {
   return (
     <IconGallery>
       {items.map((item) => (
-        <IconItem name={item} key={item}>
-          <CaralIcon name={item} />
+        <IconItem name={item} key={item}> {/* Usar item directamente como clave y nombre */}
+          <CaralIcon name={item as Icons} />
         </IconItem>
       ))}
     </IconGallery>
