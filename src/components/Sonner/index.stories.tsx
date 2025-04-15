@@ -180,7 +180,7 @@ export const Variants: TosterStory = {
             </pre>
           </div>
         ))}
-        <Toaster {...args} richColors />
+        <Toaster {...args} />
       </div>
 
     )
@@ -202,37 +202,59 @@ const allTypes = [
     })`,
     action: () =>
       toast("Event has been created", {
-        description: "Monday, January 3rd at 6:00pm",
+        description: "Monday, January 3rd at 6:00pm.Monday, January 3rd at 6:00pm.Monday, January 3rd at 6:00pm.Monday, January 3rd at 6:00pm",
+        closeButton: true,
+        duration: 100000
       }),
   },
   {
     name: "Success",
-    snippet: `toast.success('Event has been created')`,
-    action: () => toast.success("Event has been created"),
+    action: () => toast.success("Event has been created", {
+      description: "Monday, January 3rd at 6:00pm.",
+      action: {
+        label: "see more",
+        onClick: () => console.log("Undo"),
+      }, closeButton: true, duration: 100000
+    }),
   },
   {
     name: "Info",
-    snippet: `toast.info('Be at the area 10 minutes before the event time')`,
-    action: () => toast.info("Be at the area 10 minutes before the event time"),
+    action: () => toast.info("Be at the area 10 minutes before the event time",
+      {
+        description: "Monday, January 3rd at 6:00pm",
+        action: {
+          label: "see more",
+          onClick: () => console.log("Undo"),
+        }, closeButton: true
+      }
+    ),
   },
   {
     name: "Warning",
-    snippet: `toast.warning('Event start time cannot be earlier than 8am')`,
-    action: () => toast.warning("Event start time cannot be earlier than 8am"),
+    action: () => toast.warning("Event start time cannot be earlier than 8am",
+      {
+        description: "Monday, January 3rd at 6:00pm",
+        action: {
+          label: "see more",
+          onClick: () => console.log("Undo"),
+        }, closeButton: true
+      }
+    ),
   },
   {
     name: "Error",
-    snippet: `toast.error('Event has not been created')`,
-    action: () => toast.error("Event has not been created"),
+    action: () => toast.error("Event has not been created",
+      {
+        description: "Monday, January 3rd at 6:00pm",
+        action: {
+          label: "see more",
+          onClick: () => console.log("Undo"),
+        }, closeButton: true
+      }
+    ),
   },
   {
     name: "Action",
-    snippet: `toast.message('Event has been created', {
-      action: {
-        label: 'Undo',
-        onClick: () => console.log('Undo'),
-      },
-    })`,
     action: () =>
       toast.message("Event has been created", {
         action: {

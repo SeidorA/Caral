@@ -1,6 +1,6 @@
 {
   "name": "caralui",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "type": "module",
   "types": "./dist/Caral.d.ts",
   "files": [
@@ -19,30 +19,30 @@
     "branches": [
       "master",
       "next"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
     ]
   },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md"
-      }
-    ],
-    "@semantic-release/npm",
-    "@semantic-release/github",
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "package.json",
-          "CHANGELOG.md"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ]
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -50,7 +50,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_19061466bcf9a47"
+    "chromatic": "npx chromatic --project-token=chpt_19061466bcf9a47",
+    "commit": "cz"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.6",
@@ -93,6 +94,8 @@
     "@xfinx/storybook-addon-html": "^5.1.11",
     "autoprefixer": "^10.4.20",
     "chromatic": "^11.25.2",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
@@ -120,5 +123,10 @@
   },
   "extensions.allowed": {
     "iconcaral2": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

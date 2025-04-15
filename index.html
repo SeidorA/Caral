@@ -1,13 +1,143 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React + TS</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <div id="root">
+    <div class="flex items-center justify-center h-[30vh]">
+      <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text"
+        aria-atomic="false">
+        <ol dir="ltr" tabindex="-1" class="toaster group" data-sonner-toaster="true" data-sonner-theme="light"
+          data-y-position="bottom" data-lifted="false" data-x-position="right"
+          style="--front-toast-height: 114.60000610351562px; --width: 356px; --gap: 14px; --offset-top: 24px; --offset-right: 24px; --offset-bottom: 24px; --offset-left: 24px; --mobile-offset-top: 16px; --mobile-offset-right: 16px; --mobile-offset-bottom: 16px; --mobile-offset-left: 16px;">
+          <li tabindex="0"
+            class="toast group group-[.toaster]:bg-seidor-warning-light group-[.toaster]:text-seidor-gray-carbon group-[.toaster]:p-0"
+            data-sonner-toast="" data-rich-colors="false" data-styled="true" data-mounted="true" data-promise="false"
+            data-swiped="false" data-removed="false" data-visible="true" data-y-position="bottom"
+            data-x-position="right" data-index="0" data-front="true" data-swiping="false" data-dismissible="true"
+            data-type="warning" data-swipe-out="false" data-expanded="false"
+            style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 114.60000610351562px; --swipe-amount-x: 0px; --swipe-amount-y: 0px;">
+            <button aria-label="Close toast" data-disabled="false" data-close-button="true"
+              class="absolute group-[.toaster]:data-[close-button]:top-4 group-[.toaster]:data-[close-button]:right-4 group-[.toaster]:data-[close-button]:bg-transparent group-[.toast]:data-[button]:text-seidor-gray-carbon"><svg
+                xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+            <div data-icon=""
+              class="group-data-[type='success']:bg-seidor-aprove group-data-[type='error']:bg-seidor-danger group-data-[type='warning']:bg-seidor-warning group-data-[type='info']:bg-seidor-info min-h-[113px] min-w-[38px] rounded-l-[6px] px-[7px] [&amp;_svg]:size-6 [&amp;_svg]:shrink-0 [&amp;_svg]:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="20" width="20">
+                <path fill-rule="evenodd"
+                  d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div data-content="" class="py-2.5 pr-2.5 spaxe-y-2.5 w-full min-h-[113px]">
+              <div data-title=""
+                class="text-[12px] border-b group-data-[type='success']:border-seidor-aprove group-data-[type='info']:border-seidor-info group-data-[type='error']:border-seidor-danger group-data-[type='warning']:border-seidor-warning h-[33px] ">
+                Event start time cannot be earlier than 8am</div>
+              <div data-description="" class="font-normal h-full">Monday, January 3rd at 6:00pm</div>
+            </div><button data-button="true" data-action="true"
+              class="group-[.toast]:data-[button]:bg-transparent group-[.toast]:data-[button]:text-seidor-gray-carbon absolute bottom-4 right-4">Undo</button>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+
+
+  <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text"
+    aria-atomic="false">
+    <ol dir="ltr" tabindex="-1" class="toaster group" data-sonner-toaster="true" data-sonner-theme="light"
+      data-y-position="bottom" data-lifted="false" data-x-position="right"
+      style="--front-toast-height: 146.60000610351562px; --width: 356px; --gap: 14px; --offset-top: 24px; --offset-right: 24px; --offset-bottom: 24px; --offset-left: 24px; --mobile-offset-top: 16px; --mobile-offset-right: 16px; --mobile-offset-bottom: 16px; --mobile-offset-left: 16px;">
+      <li tabindex="0" class="toast group" data-sonner-toast="" data-rich-colors="false" data-styled="true"
+        data-mounted="true" data-promise="false" data-swiped="false" data-removed="false" data-visible="true"
+        data-y-position="bottom" data-x-position="right" data-index="0" data-front="true" data-swiping="false"
+        data-dismissible="true" data-swipe-out="false" data-expanded="false"
+        style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 146.60000610351562px; --swipe-amount-x: 0px; --swipe-amount-y: 0px;">
+        <button aria-label="Close toast" data-disabled="false" data-close-button="true"
+          class="absolute group-[.toaster]:data-[close-button]:left-auto group-[.toaster]:data-[close-button]:top-4 group-[.toaster]:data-[close-button]:right-4 group-[.toaster]:data-[close-button]:bg-transparent group-[.toast]:data-[button]:text-seidor-gray-carbon group-[.toaster]:data-[close-button]:border-none"><svg
+            xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg></button>
+        <div data-content="" class="py-2.5 pr-2.5 spaxe-y-2.5 w-full min-h-[113px]">
+          <div data-title=""
+            class="text-[12px] border-b group-data-[type='success']:border-seidor-aprove group-data-[type='info']:border-seidor-info group-data-[type='error']:border-seidor-danger group-data-[type='warning']:border-seidor-warning h-[33px] ">
+            Event has been created</div>
+          <div data-description="" class="font-normal h-full">Monday, January 3rd at 6:00pm</div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text"
+    aria-atomic="false">
+    <ol dir="ltr" tabindex="-1" class="toaster group" data-sonner-toaster="true" data-sonner-theme="light"
+      data-y-position="bottom" data-lifted="false" data-x-position="right"
+      style="--front-toast-height: 114.60000610351562px; --width: 356px; --gap: 14px; --offset-top: 24px; --offset-right: 24px; --offset-bottom: 24px; --offset-left: 24px; --mobile-offset-top: 16px; --mobile-offset-right: 16px; --mobile-offset-bottom: 16px; --mobile-offset-left: 16px;">
+      <li tabindex="0"
+        class="toast group group-[.toaster]:bg-seidor-aprove-light group-[.toaster]:text-seidor-gray-carbon group-[.toaster]:p-0"
+        data-sonner-toast="" data-rich-colors="false" data-styled="true" data-mounted="true" data-promise="false"
+        data-swiped="false" data-removed="false" data-visible="true" data-y-position="bottom" data-x-position="right"
+        data-index="0" data-front="true" data-swiping="false" data-dismissible="true" data-type="success"
+        data-swipe-out="false" data-expanded="false"
+        style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 114.60000610351562px; --swipe-amount-x: 0px; --swipe-amount-y: 0px;">
+        <button aria-label="Close toast" data-disabled="false" data-close-button="true"
+          class="absolute group-[.toaster]:data-[close-button]:left-auto group-[.toaster]:data-[close-button]:top-4 group-[.toaster]:data-[close-button]:right-4 group-[.toaster]:data-[close-button]:bg-transparent group-[.toast]:data-[button]:text-seidor-gray-carbon group-[.toaster]:data-[close-button]:border-none"><svg
+            xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg></button>
+        <div data-icon=""
+          class="group-data-[type='success']:bg-seidor-aprove group-data-[type='error']:bg-seidor-danger group-data-[type='warning']:bg-seidor-warning group-data-[type='info']:bg-seidor-info min-h-[113px] min-w-[38px] rounded-l-[6px] px-[7px] [&amp;_svg]:size-6 [&amp;_svg]:shrink-0 [&amp;_svg]:text-white">
+          <svg viewBox="0 0 25 25" width="14" height="14">
+            <path fill="currentColor"
+              d="M8.64,21.1c-.23,0-.44-.09-.6-.25L.25,13.06c-.33-.33-.33-.87,0-1.2s.87-.33,1.2,0l7.2,7.2,14.91-14.91c.33-.33.87-.33,1.2,0s.33.87,0,1.2l-15.51,15.51c-.16.16-.37.25-.6.25Z">
+            </path>
+          </svg>
+        </div>
+        <div data-content="" class="py-2.5 pr-2.5 spaxe-y-2.5 w-full min-h-[113px]">
+          <div data-title=""
+            class="text-[12px] border-b group-data-[type='success']:border-seidor-aprove group-data-[type='info']:border-seidor-info group-data-[type='error']:border-seidor-danger group-data-[type='warning']:border-seidor-warning h-[33px] ">
+            Event has been created</div>
+          <div data-description="" class="font-normal h-full">Monday, January 3rd at 6:00pm</div>
+        </div>
+        <button data-button="true" data-action="true"
+          class="group-[.toast]:data-[button]:bg-transparent group-[.toast]:data-[button]:text-seidor-gray-carbon absolute bottom-4 right-4">see
+          more
+        </button>
+      </li>
+      <li tabindex="0" class="my-classname toast group" data-sonner-toast="" data-rich-colors="false" data-styled="true"
+        data-mounted="true" data-promise="false" data-swiped="false" data-removed="false" data-visible="true"
+        data-y-position="bottom" data-x-position="right" data-index="0" data-front="true" data-swiping="false"
+        data-dismissible="true" data-swipe-out="false" data-expanded="false"
+        style="--index: 0; --toasts-before: 0; --z-index: 3; --offset: 0px; --initial-height: 146.60000610351562px;">
+        <div data-icon=""
+          class="group-data-[type='success']:bg-seidor-aprove group-data-[type='error']:bg-seidor-danger group-data-[type='warning']:bg-seidor-warning group-data-[type='info']:bg-seidor-info group-[.toaster]:data-[icon]:h-[113px] group-data-[styled]:data-[icon]:w-[38px] rounded-l-[6px] px-[7px] [&amp;_svg]:size-6 [&amp;_svg]:shrink-0 [&amp;_svg]:text-white group-data-[type='loading']:bg-seidor-gray-carbon">
+          <span>🚀</span>
+        </div>
+        <div data-content=""
+          class="group-data-[type]:py-2.5 group-data-[type]:pr-2.5 spaxe-y-2.5 w-full group-data-[type]:min-h-[113px]">
+          <div data-title=""
+            class="text-[12px] group-data-[type]:border-b group-data-[type='success']:border-seidor-aprove group-data-[type='info']:border-seidor-info group-data-[type='error']:border-seidor-danger group-data-[type='warning']:border-seidor-warning group-data-[type]:h-[33px] ">
+            A Sonner toast</div>
+          <div data-description="" class="font-normal h-full">With a description and an icon</div>
+        </div>
+      </li>
+    </ol>
+  </section>
+</body>
+
 </html>
