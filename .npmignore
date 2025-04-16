@@ -1,0 +1,20 @@
+# Ignorar node_modules y archivos de construcción
+node_modules
+*.log
+dist-ssr
+*.local
+
+# Ignorar configuraciones de editores
+.vscode/
+.idea
+.DS_Store
+
+# Ignorar archivos temporales
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Incluir la carpeta dist para publicación en NPM
+!dist/
