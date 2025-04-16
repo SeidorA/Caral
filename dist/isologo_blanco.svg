@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 811.59 253.94">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Poppins-Bold, Poppins;
+        font-size: 174.11px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #66b6ff;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <text class="cls-1" transform="translate(142.5 148.43)"><tspan class="cls-2" x="0" y="0">Caral</tspan><tspan class="cls-4" x="494.99" y="0">UI</tspan></text>
+    <g>
+      <path class="cls-3" d="M113.77,21.96h-29.76c22.25,8.29,38.11,29.73,38.11,54.87s-15.82,46.52-38.03,54.84l5.41,17.8h24.26c7.59,0,13.73-6.15,13.73-13.73V35.7c0-7.59-6.15-13.73-13.73-13.73Z"/>
+      <path class="cls-3" d="M43.07,131.67c-22.21-8.31-38.03-29.73-38.03-54.84S20.89,30.26,43.15,21.96H13.73c-7.59,0-13.73,6.15-13.73,13.73v100.04c0,7.59,6.15,13.73,13.73,13.73h23.92l5.41-17.8Z"/>
+    </g>
+    <circle class="cls-3" cx="63.58" cy="76.83" r="40.25"/>
+  </g>
+</svg>
