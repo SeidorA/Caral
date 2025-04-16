@@ -25,8 +25,8 @@ export * from './components/Timeline';
 export * from './components/Title';
 export * from './components/Tooltip';
 export * from './lib/utils';
+export { useIsMobile };
 
 // Utilidades
 import { useIsMobile } from './hooks/use-mobile';
-export default { useIsMobile };
 
