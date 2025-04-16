@@ -19,6 +19,7 @@ export * from './components/Popover';
 export * from './components/Select';
 export * from './components/Skeleton';
 export * from './components/Sonner';
+export * from './components/Table';
 export * from './components/Tabs';
 export * from './components/Timeline';
 export * from './components/Title';

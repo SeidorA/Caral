@@ -1,13 +1,18 @@
-import { defineConfig, Rollup } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
+import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), dts({rollupTypes: true})],
-  
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "./src"),
+      "caral-ui": resolve(__dirname, "./src"),
+    },
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
