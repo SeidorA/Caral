@@ -1,6 +1,6 @@
 {
   "name": "caralui",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "types": "./dist/Caral.d.ts",
   "files": [
@@ -18,7 +18,7 @@
   "release": {
     "branches": [
       "master",
-      "next"
+      "dev"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
