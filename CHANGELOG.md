@@ -1,3 +1,10 @@
+## [0.2.4](https://github.com/SeidorA/Caral/compare/v0.2.3...v0.2.4) (2025-04-17)
+
+
+### Bug Fixes
+
+* **button:** add 'use client' directive to Button component ([524d822](https://github.com/SeidorA/Caral/commit/524d8224f3dafadc256ecabbfa92d67a982791dc))
+
 ## [0.2.3](https://github.com/SeidorA/Caral/compare/v0.2.2...v0.2.3) (2025-04-16)
 
 

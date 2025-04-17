@@ -1,6 +1,6 @@
 {
   "name": "caralui",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "type": "module",
   "types": "./dist/Caral.d.ts",
   "files": [
