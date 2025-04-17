@@ -1,3 +1,10 @@
+## [0.2.5](https://github.com/SeidorA/Caral/compare/v0.2.4...v0.2.5) (2025-04-17)
+
+
+### Bug Fixes
+
+* **release:** add build step before release in workflow ([13ea8ef](https://github.com/SeidorA/Caral/commit/13ea8efb80cfdf0719c9415b9cbf39ae3addb2ff))
+
 ## [0.2.4](https://github.com/SeidorA/Caral/compare/v0.2.3...v0.2.4) (2025-04-17)
 
 
